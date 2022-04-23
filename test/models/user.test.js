@@ -1,5 +1,5 @@
 // Importamos la clase que vamos a probar
-const User = require('./../app/user')
+const User = require('../../app/models/user')
     // creacion de los casos a probar
 describe("verificar creacion de ususarios", () => {
     // Prueba de caso 1
