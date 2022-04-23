@@ -1,0 +1,17 @@
+{
+    "name": "twitter",
+    "version": "1.0.0",
+    "description": "proyecto realizado para LaunchX",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "jest"
+    },
+    "author": "GabrielVillagran",
+    "license": "ISC",
+    "devDependencies": {
+        "jest": "^27.5.1"
+    }
+}
