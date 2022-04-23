@@ -29,10 +29,20 @@ describe("verificar creacion de ususarios", () => {
 
         // Resultado que se espera de las pruebas
         expect(user3.getID).toBe(2);
-        expect(user3.getUsername).toBe("Clay");
-        expect(user3.getName).toBe("Ron");
+        expect(user3.getUsername).toBe("ClayMorrow");
+        expect(user3.getName).toBe("Ron Pearlman");
         expect(user3.getBio).toBe("Bio");
         expect(user3.getDateCreated).not.toBeUndefined();
         expect(user3.getLastUpdated).not.toBeUndefined();
+    });
+    // prueba de caso 4
+    test('case4: Uso de setters', () => {
+        // codigo que se desea probar
+        const user2 = new User(1, "ThatMan", "Gabriel", "Bio")
+        user2.setUsername = "That_Man29A"
+        user2.setName = "Gabriel Villagran"
+            // Resultado que se espera de las pruebas
+        expect(user2.username).toBe("That_Man29A");
+        expect(user2.name).toBe("Gabriel Villagran");
     });
 })

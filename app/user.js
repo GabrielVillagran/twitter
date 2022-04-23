@@ -17,7 +17,7 @@ class user {
         }
         // obtener el name
     get getName() {
-            return this.Name
+            return this.name
         }
         // obtener la bio
     get getBio() {
@@ -29,7 +29,23 @@ class user {
         }
         // obtener la fecha actualizada
     get getLastUpdated() {
-        return this.lastUpdated
+            return this.lastUpdated
+        }
+        // actualizacion del id
+    set setID(newID) {
+            this.id = newID
+        }
+        // actualizacion del username
+    set setUsername(newUsername) {
+            this.username = newUsername
+        }
+        // actualizacion del name
+    set setName(newName) {
+            this.name = newName
+        }
+        // actualizacion de la bio
+    set setBio(newBio) {
+        this.bio = newBio
     }
 }
 module.exports = user
