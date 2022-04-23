@@ -17,7 +17,19 @@ class user {
         }
         // obtener el name
     get getName() {
-        return this.Name
+            return this.Name
+        }
+        // obtener la bio
+    get getBio() {
+            return this.bio
+        }
+        // obtener la fecha creada
+    get getDateCreated() {
+            return this.dateCreated
+        }
+        // obtener la fecha actualizada
+    get getLastUpdated() {
+        return this.lastUpdated
     }
 }
 module.exports = user

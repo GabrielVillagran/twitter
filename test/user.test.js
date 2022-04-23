@@ -32,7 +32,7 @@ describe("verificar creacion de ususarios", () => {
         expect(user3.getUsername).toBe("Clay");
         expect(user3.getName).toBe("Ron");
         expect(user3.getBio).toBe("Bio");
-        expect(user3.getdateCreated).not.toBeUndefined();
-        expect(user3.getlastUpdated).not.toBeUndefined();
+        expect(user3.getDateCreated).not.toBeUndefined();
+        expect(user3.getLastUpdated).not.toBeUndefined();
     });
 })
