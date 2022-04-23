@@ -22,4 +22,17 @@ describe("verificar creacion de ususarios", () => {
         expect(user2.dateCreated).not.toBeUndefined();
         expect(user2.lastUpdated).not.toBeUndefined();
     });
+    // prueba de caso 3
+    test('case3: Uso de  getters', () => {
+        // codigo que se desea probar
+        const user3 = new User(2, "ClayMorrow", "Ron Pearlman", "Bio")
+
+        // Resultado que se espera de las pruebas
+        expect(user3.getID).toBe(2);
+        expect(user3.getUsername).toBe("Clay");
+        expect(user3.getName).toBe("Ron");
+        expect(user3.getBio).toBe("Bio");
+        expect(user3.getdateCreated).not.toBeUndefined();
+        expect(user3.getlastUpdated).not.toBeUndefined();
+    });
 })
