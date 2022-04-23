@@ -22,5 +22,8 @@ class UserService {
         // Se retornan los valores que se agregaron a la lista
         return listInfo
     }
+    set setUsername(newUsername) {
+        this.username = newUsername
+    }
 }
 module.exports = UserService

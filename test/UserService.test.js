@@ -27,4 +27,16 @@ describe("verificar creacion de ususarios", () => {
         expect(user.getInfo[2]).toBe("Gabriel");
         expect(user.getInfo[3]).toBe("user 26757213");
     });
+    // Prueba de caso 3
+    test('Case3: actualizar el valor del atributo username', () => {
+        // codigo que se desea probar
+        const user = new userService(1, "ThatMan", "Gabriel")
+
+        // actualizacion del valor
+
+        user.setUsername = "Villagran29A"
+
+        // Resultado que se espera de las pruebas
+        expect(user.username).toBe("Villagran29A");
+    });
 })
