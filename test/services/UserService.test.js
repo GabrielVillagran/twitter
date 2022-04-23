@@ -18,12 +18,13 @@ describe("pruebas para clase UserService", () => {
     test('Case2: metodo que recibe la clase user y me regresa una lista con todos los valores de los atributos', () => {
         // codigo que se desea probar
         const user = userService.create(1, "ThatMan", "Gabriel")
+        const userList = userService.getInfo(user)
 
         // Resultado que se espera de las pruebas
-        expect(user.getInfo[0]).toBe(1);
-        expect(getInfo[1]).toBe("ThatMan");
-        expect(getInfo[2]).toBe("Gabriel");
-        expect(getInfo[3]).toBe("user 26757213");
+        expect(userList[0]).toBe(1);
+        expect(userList[1]).toBe("ThatMan");
+        expect(userList[2]).toBe("Gabriel");
+        expect(userList[3]).toBe("user 26757213");
     });
     // // Prueba de caso 3
     // test('Case3: actualizar el valor del atributo username', () => {
