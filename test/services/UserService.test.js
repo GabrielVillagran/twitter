@@ -37,16 +37,18 @@ describe("pruebas para clase UserService", () => {
         // Resultado que se espera de las pruebas
         expect(user.username).toBe("Villagran29A");
     });
-    // // Prueba de caso 4
-    // test('Case4: lista de atributos de usuarios', () => {
-    //     // codigo que se desea probar
-    //     const user1 = userService.create(1, "ThatMan", "Gabriel")
-    //     const user2 = userService.create(2, "Villagran29A", "Gabriel Villagran")
-    //     const user3 = userService.create(3, "CausableMass4", "MeAndThatMan")
-    //     const usernames = userService.getAllUsernames([user1, user2, user3])
-    //         // Resultado que se espera de las pruebas
-    //     expect(usernames).toContain("ThatMan");
-    //     expect(usernames).toContain("Villagran29A");
-    //     expect(usernames).toContain("MeAndThatMan");
-    // });
+    // Prueba de caso 4
+    test('Case4: lista de usuarios', () => {
+        // codigo que se desea probar
+        const user1 = userService.create(1, "ThatMan", "Gabriel")
+        const user2 = userService.create(2, "Villagran29A", "Gabriel Villagran")
+        const user3 = userService.create(3, "MeAndThatMan", "Luis Estrada")
+        const user4 = userService.create(3, "CausableMass4", "Oriandy Soberanis")
+        const usernames = userService.getAllUsernames([user1, user2, user3, user4])
+            // Resultado que se espera de las pruebas
+        expect(usernames).toContain("ThatMan");
+        expect(usernames).toContain("Villagran29A");
+        expect(usernames).toContain("MeAndThatMan");
+        expect(usernames).toContain("CausableMass4");
+    });
 })

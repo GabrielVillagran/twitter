@@ -20,24 +20,9 @@ class UserService {
         user.username = newUsername
     }
 
-    // static create(id, name, username) {
-    //     this.id = id
-    //     this.name = name
-    //     this.username = username
-    // }
     // requerimiento 4
-    // static getAllUsernames() {
-    //     // creacion de la lista
-    //     const listUsers = []
-
-    //     // se agregan los datos a la lista
-    //     listUsers.push(user.)
-    //     listUsers.push(this.username)
-    //     listUsers.push(this.name)
-    //     listUsers.push(this.bio)
-
-    //     // Se retornan los valores que se agregaron a la lista
-    //     return listUsers
-    // }
+    static getAllUsernames(usernames) {
+        return usernames.map(users => users.username)
+    }
 }
 module.exports = UserService
