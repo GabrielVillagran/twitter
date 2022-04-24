@@ -6,6 +6,7 @@ class UserService {
         return new user(id, username, name, "user 26757213")
     }
 
+    // requerimiento 2
     static getInfo(user) {
         // El método Object.values() devuelve un array con los valores correspondientes a las propiedades enumerables
         // de un objeto. Las propiedades son devueltas en el mismo orden a como lo haría un bucle for...in 
@@ -14,12 +15,11 @@ class UserService {
         return Object.values(user)
     }
 
-    // requerimiento 2
-
     // requerimiento 3
-    // set setUsername(newUsername) {
-    //     this.username = newUsername
-    // }
+    static updateUsername(user, newUsername) {
+        user.username = newUsername
+    }
+
     // static create(id, name, username) {
     //     this.id = id
     //     this.name = name

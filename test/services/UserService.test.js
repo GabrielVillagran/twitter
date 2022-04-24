@@ -26,18 +26,17 @@ describe("pruebas para clase UserService", () => {
         expect(userList[2]).toBe("Gabriel");
         expect(userList[3]).toBe("user 26757213");
     });
-    // // Prueba de caso 3
-    // test('Case3: actualizar el valor del atributo username', () => {
-    //     // codigo que se desea probar
-    //     const user = new userService(1, "ThatMan", "Gabriel")
+    // Prueba de caso 3
+    test('Case3: actualizar el valor del atributo username', () => {
+        // codigo que se desea probar
+        const user = userService.create(1, "ThatMan", "Gabriel")
 
-    //     // actualizacion del valor
+        // actualizacion del valor
+        userService.updateUsername(user, "Villagran29A")
 
-    //     user.setUsername = "Villagran29A"
-
-    //     // Resultado que se espera de las pruebas
-    //     expect(user.username).toBe("Villagran29A");
-    // });
+        // Resultado que se espera de las pruebas
+        expect(user.username).toBe("Villagran29A");
+    });
     // // Prueba de caso 4
     // test('Case4: lista de atributos de usuarios', () => {
     //     // codigo que se desea probar
